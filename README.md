@@ -33,10 +33,4 @@ npm run dev
 
 Depois, é só abrir [http://localhost:3000](http://localhost:3000) com o seu navegador.
 
-## Redes sociais:
 
-Acompanhe o SejaDev em:
-- [Youtube](https://www.youtube.com/@sejaDev)
-- [Instagram](https://www.instagram.com/seja.dev/)
-- [Linkedin](https://www.linkedin.com/company/79618568)
-- [Facebook](https://www.facebook.com/sejadevoficial/)
