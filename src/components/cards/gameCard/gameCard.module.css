@@ -1,0 +1,32 @@
+.gamecard{
+    background: #2983AA;
+    display: flex;
+
+}
+.info{
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+.category{
+    color: #C7c7c7;
+    size: 16px;
+    font-weight: 400;
+    flex: 1;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.price{
+    font-size: 32px;
+    color: #beeb14;
+}
