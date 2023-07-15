@@ -23,19 +23,53 @@ export default function Home() {
         <div className={styles.session}>
           <Subtitle>Promoçoes</Subtitle>
           <div className={styles.salecontainer}>
-            <SaleCard />
-            <SaleCard />
-            <SaleCard />
+            <SaleCard
+              image={"league-of-legends.jpg"}
+              discount="10%"
+              discountPrice="89,90"
+              fullPrice="99,90"
+            />
+            <SaleCard
+              image={"dota-2.jpg"}
+              discount="40%"
+              discountPrice="59,90"
+              fullPrice="99,90"
+            />
+            <SaleCard
+              image={"valorant.jpg"}
+              discount="30%"
+              discountPrice="69,90"
+              fullPrice="99,90"
+            />
           </div>
         </div>
         <div className={styles.session}>
           <Subtitle>Outros jogos</Subtitle>
           <div className={styles.gamecontainer}>
-            <GameCard />
-            <GameCard />
-            <GameCard />
-            <GameCard />
-            <GameCard />
+            <GameCard
+              image={"counter-strike.jpg"}
+              title="Counter strike: Global offensive"
+              category="Ação, estratégia, multijogador."
+              fullPrice="90,90"
+            />
+            <GameCard
+              image={"counter-strike.jpg"}
+              title="Counter strike: Global offensive"
+              category="Ação, estratégia, multijogador."
+              fullPrice="90,90"
+            />
+            <GameCard
+              image={"counter-strike.jpg"}
+              title="Counter strike: Global offensive"
+              category="Ação, estratégia, multijogador."
+              fullPrice="90,90"
+            />
+            <GameCard
+              image={"counter-strike.jpg"}
+              title="Counter strike: Global offensive"
+              category="Ação, estratégia, multijogador."
+              fullPrice="90,90"
+            />
           </div>
         </div>
       </Container>
