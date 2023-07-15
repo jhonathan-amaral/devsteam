@@ -5,7 +5,7 @@ import styles from './cartButton.module.css'
 import CartMenu from '@/components/cartMenu/cartMenu'
 
 
-export default function CartButton(){
+export default function CartButton({cart, onRemove}){
     const [open, setOpen] = useState(false)
    
     return(
@@ -16,7 +16,7 @@ export default function CartButton(){
             onClick={() => setOpen(!open)}
 
             />
-            {open && <CartMenu />}
+            {open && <CartMenu  cart={cart} onRemove={onRemove}/>}
         </div>
     )
 }

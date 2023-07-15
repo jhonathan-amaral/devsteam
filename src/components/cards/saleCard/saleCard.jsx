@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './saleCard.module.css'
 import Button from '@/components/forms/button/button'
 
-export default function SaleCard({image, discount, fullPrice, discountPrice}){
+export default function SaleCard({image, discount, fullPrice, discountPrice, onAdd}){
     return(
         <div className={styles.salecard}>
             <Image src={`/products/${image}` } alt={`Produto ${image}`} width={250} height={300}/>
@@ -11,20 +11,20 @@ export default function SaleCard({image, discount, fullPrice, discountPrice}){
                 <div className={styles.pricecard}>
                     <div className={styles.percent}>{discount}</div>
                     <div className={styles.price}>
-                        <p className={styles.fullprice}>R$: {fullPrice}</p>
-                        <h4 className={styles.discountprice}>{discountPrice}</h4>
+                        <p className={styles.fullprice}>R${fullPrice}</p>
+                        <h4 className={styles.discountprice}>R${discountPrice}</h4>
                     </div>
                 </div>
-                <Button fullWidth>Adcionar ao carrinho</Button>
+                <Button fullWidth onClick={onAdd}>Adcionar ao carrinho</Button>
             </div>
         </div>
     )
 }
 
 SaleCard.defaultProps={
-    image: 'League-of-legends.jpg',
+    image: 'league-of-legends.jpg',
     discount: '10%',
     fullPrice: '99,90',
-    discountPrice: 'R$ 89,90'
+    discountPrice: '89,90'
 
 }

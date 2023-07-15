@@ -2,7 +2,7 @@ import Image from 'next/image'
 import style from './gameCard.module.css'
 import Button from '@/components/forms/button/button'
 
-export default function GameCard({image,title,category,fullPrice}){
+export default function GameCard({image,title,category,fullPrice, onAdd}){
     return(
         <div className={style.gamecard}>
             <Image className={style.image} src={`/products/${image}`} width={300} height={145}/>
@@ -11,7 +11,7 @@ export default function GameCard({image,title,category,fullPrice}){
                 <p className={style.category}>{category}</p>
                 <div className={style.pricing}>
                     <h2 className={style.price}>R${fullPrice}</h2>
-                    <Button >Adicionar ao carrinho</Button>
+                    <Button onClick={onAdd}>Adicionar ao carrinho</Button>
                 </div>
             </div>
         </div>
