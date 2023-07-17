@@ -5,7 +5,7 @@ import styles from './navbar.module.css'
 
 
 
-export default function Navbar({cart, onRemove}){
+export default function Navbar(){
 return(
     <div className={styles.navbar}>
         <Logo/>
@@ -13,8 +13,7 @@ return(
             <Input placeholder="Buscar" fullWidth type="text"/>
         </div>
         <CartButton
-        cart={cart}
-        onRemove={onRemove}
+     
         />
     </div>
 )
