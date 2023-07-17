@@ -17,7 +17,6 @@ export default function Home() {
     setCart(cart.filter((obj, posObj) => posObj !== pos));
   };
 
-  console.log(cart);
   return (
     <>
       <Head>
@@ -42,7 +41,7 @@ export default function Home() {
               onAdd={() =>
                 handleAddProduct({
                   name: "league-of-legends",
-                  price: "99,90",
+                  price: 99.9,
                   image: "league-of-legends.jpg",
                 })
               }
@@ -55,7 +54,7 @@ export default function Home() {
               onAdd={() =>
                 handleAddProduct({
                   name: "Dota 2",
-                  price: "89,90",
+                  price: 89.9,
                   image: "dota-2.jpg",
                 })
               }
@@ -68,7 +67,7 @@ export default function Home() {
               onAdd={() =>
                 handleAddProduct({
                   name: "Valorant",
-                  price: "109,90",
+                  price: 109.9,
                   image: "valorant.jpg",
                 })
               }
@@ -86,7 +85,7 @@ export default function Home() {
               onAdd={() =>
                 handleAddProduct({
                   name: "Counte Strike",
-                  price: "90,90",
+                  price: 90.9,
                   image: "counter-strike.jpg",
                 })
               }

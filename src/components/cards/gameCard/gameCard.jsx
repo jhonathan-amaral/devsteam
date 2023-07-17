@@ -5,7 +5,7 @@ import Button from '@/components/forms/button/button'
 export default function GameCard({image,title,category,fullPrice, onAdd}){
     return(
         <div className={style.gamecard}>
-            <Image className={style.image} src={`/products/${image}`} width={300} height={145}/>
+            <Image className={style.image} src={`/products/${image}`} alt={`Produto ${image}`} width={300} height={145}/>
             <div className={style.info}>
                 <h3 className={style.title}>{title}</h3>
                 <p className={style.category}>{category}</p>
