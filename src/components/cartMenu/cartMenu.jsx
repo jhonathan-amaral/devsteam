@@ -10,7 +10,7 @@ export default function CartMenu({cart,onRemove}){
            <CartOption
             image={cartInfo.image}
             title={cartInfo.name}
-            price={cartInfo.price}
+            price={cartInfo.price.toFixed(2)}
            onRemove={() => onRemove(pos)}
            key={`cart-info-${pos}`}
            />
